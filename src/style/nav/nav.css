@@ -1,0 +1,15 @@
+.nav {
+  gap: 10px;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "Montserrat";
+}
+.nav .nav-home {
+  text-decoration: none;
+  color: red;
+  margin-right: 10px;
+}
+.nav .nav-about {
+  text-decoration: none;
+  color: red;
+}/*# sourceMappingURL=nav.css.map */

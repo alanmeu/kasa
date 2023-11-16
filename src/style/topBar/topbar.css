@@ -1,0 +1,32 @@
+.topBar-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #FF6060;
+  margin: 20px auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  border-radius: 15px;
+  padding: 20px 0px;
+}
+.topBar-container__dropdown {
+  width: 100%;
+}
+.topBar-container .topBar-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 500;
+  width: 100%;
+}
+.topBar-container .topBar-title h2, .topBar-container .topBar-title p {
+  color: white;
+  font-family: "Montserrat";
+  margin: 0;
+}
+.topBar-container .topBar-content {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}/*# sourceMappingURL=topbar.css.map */

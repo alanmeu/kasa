@@ -1,0 +1,14 @@
+.error-404 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 140px;
+}
+.error-404 .erreurText {
+  font-size: 36px;
+  color: #FF6060;
+}
+.error-404 .errorContainer__Link {
+  color: #FF6060;
+}/*# sourceMappingURL=erreur.css.map */
