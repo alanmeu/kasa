@@ -1,6 +1,6 @@
 import logo from "/Users/alan/Desktop/kasa/kasa/src/Assets/Images/LOGO.svg";
 import Nav from "/Users/alan/Desktop/kasa/kasa/src/Component/Nav.jsx";
-import "/Users/alan/Desktop/kasa/kasa/src/style/header.css"
+import "/Users/alan/Desktop/kasa/kasa/src/style/header/header.css"
 
 export default function Header() {
   return (

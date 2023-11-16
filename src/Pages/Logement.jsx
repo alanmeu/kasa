@@ -5,6 +5,8 @@ import logements from "/Users/alan/Desktop/kasa/kasa/src/logements.json";
 import MainLayout from "../Layout/MainLayout";
 import Carrousel from "../Component/carousel";
 import TopBar from "../Component/topbar";
+import Note from "../Component/rating";
+
 
 
 
@@ -36,18 +38,16 @@ const Logement = () => {
       <div className="host">
         <img src={logement.host.picture} alt={logement.host.name}/>
         <p>{logement.host.name}</p>
-        <p>{logement.rating}</p>
+        <Note rating={logement.rating} />
       </div>
-      {/* Affichez d'autres détails du logement selon vos besoins */}
+     
     </div>
     <div>
-    <TopBar title="Description" content={logement.description}/>
-    <TopBar title="Equipements" content={logement.equipments.map((item, index) => (
-  <li key={index}>{item}</li>
-))} />
-
-    
-    </div>
+      <TopBar title="Description" content={logement.description}/>
+      <TopBar title="Equipements" content={logement.equipments.map((item, index) => (
+      <li key={index}>{item}</li>
+      ))} />
+   </div>
     </MainLayout>
   );
 };
