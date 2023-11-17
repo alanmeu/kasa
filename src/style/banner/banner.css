@@ -1,16 +1,18 @@
 .bannierContainer {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .bannierContainer .txt {
   position: absolute;
   color: white;
-  width: 705px;
-  height: 68px;
-  top: 241px;
-  left: 373px;
-  font-size: 48px;
+  font-size: 4vw;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 70%;
 }
 .bannierContainer .img-bannier {
   -o-object-fit: cover;

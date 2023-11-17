@@ -1,27 +1,25 @@
 .topBar-container {
   display: flex;
   flex-direction: column;
-  background-color: #FF6060;
   margin: 20px auto;
   justify-content: center;
   align-items: center;
   margin-top: 10px;
-  border-radius: 15px;
   padding: 20px 0px;
 
-  &__dropdown {
-    width: 100%;
-  }
-
   .topBar-title {
+    border-radius: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-size: 18px;
+    align-items: center;
+    padding: 10px;
+    background-color: #FF6060;
     font-weight: 500;
     width: 100%;
 
     h2, p {
+      font-size: 18px;
       color: white;
       font-family: "Montserrat";
       margin: 0;
@@ -31,6 +29,12 @@
   .topBar-content {
     display: flex;
     flex-direction: column;
-    color: white;
+    color: #FF6060;
+    background-color: #F6F6F6;
+    width: 100%;
+    padding: 0px 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: -2px; 
   }
 }

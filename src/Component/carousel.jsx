@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import left from "/Users/alan/Desktop/kasa/kasa/src/Assets/Images/arrow_left.png";
 import right from "/Users/alan/Desktop/kasa/kasa/src/Assets/Images/arrow_right.png";
+import "/Users/alan/Desktop/kasa/kasa/src/style/carousel/caroussel.css"
 
 function Carrousel({ slides }) {
   try {
@@ -20,30 +21,26 @@ function Carrousel({ slides }) {
     }
 
     return (
-      <section className="slide">
+      <section className="carousel">
         {length > 1 && (
           <img src={left} className="left-Arrow" alt="left" onClick={prevImage} />
         )}
         {length > 1 && (
           <img src={right} className="right-Arrow" alt="right" onClick={nextImage} />
         )}
-        {slides.map((image, index) => {
-          return (
-            <div
-              key={index}
-              className={index === current ? "slider active" : "slider"}
-            >
-              {index === current && (
-                <img src={image} alt="img-appartement" className="slide__image" />
-              )}
-              {index === current && length > 1 && (
-                <span className="slider__number">
-                  {current + 1}/{length}
-                </span>
-              )}
-            </div>
-          );
-        })}
+        
+        {slides.map((image, index) => (
+  index === current ? (
+    <div key={index} className={`slider active`}>
+      <img src={image} alt="img-appartement" className="slide__image" />
+      {length > 1 && (
+        <span className="slider__number">
+          {current + 1}/{length}
+        </span>
+      )}
+    </div>
+  ) : null
+))}
       </section>
     );
   } catch (error) {

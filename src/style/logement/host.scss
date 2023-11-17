@@ -1,0 +1,53 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .left-content {
+    flex: 1; 
+    margin-right: 20px; 
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+    }
+    
+    ul li {
+      color: white;
+      background-color: #FF6060;
+      padding: 10px; 
+      margin-right: 5px;
+      border-radius: 10px;
+    }
+      h2,P{
+        color: #FF6060;
+      }
+  }
+
+  .host {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .profil {
+    margin-top:10px ;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-right: 10px; 
+
+    p{
+      color: #FF6060;
+    }
+  }
+  
+  .profil img {
+    border-radius: 50%;
+    margin-left: 10px;
+  }
+  
+  
