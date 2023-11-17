@@ -13,14 +13,14 @@ const toggleIsOpen = () => {
 };
 
 return(
-    <div className="topBar-container">
-      <div className="topBar-title">
+  <div className={`topBar-container ${isOpen ? 'open' : ''}`}>
+      <div className="topBar-title" onClick={toggleIsOpen}>
         <h2>{title}</h2>
-        <p onClick={toggleIsOpen}>
+        <p>
           {isOpen ? (
-            <img src={up} className="arrow-up" alt="up"/>
+            <img src={up} className="arrow-up" alt="up" />
           ) : (
-            <img src={down} className="arrow-down" alt="down"/>
+            <img src={down} className="arrow-down" alt="down" />
           )}
         </p>
       </div>
@@ -28,7 +28,8 @@ return(
         {isOpen && <p>{content}</p>}
       </div>
     </div>
-  
-)}
+  );
+};
+
 
 export default TopBar

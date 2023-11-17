@@ -6,8 +6,11 @@
   align-items: center;
   margin-top: 10px;
   padding: 20px 0px;
+  transition: height 0.3s ease;
 }
 .topBar-container .topBar-title {
+  z-index: 10;
+  position: relative;
   border-radius: 10px;
   display: flex;
   flex-direction: row;
@@ -17,14 +20,18 @@
   background-color: #FF6060;
   font-weight: 500;
   width: 100%;
+  cursor: pointer;
 }
-.topBar-container .topBar-title h2, .topBar-container .topBar-title p {
+.topBar-container .topBar-title h2,
+.topBar-container .topBar-title p {
   font-size: 18px;
   color: white;
   font-family: "Montserrat";
   margin: 0;
 }
 .topBar-container .topBar-content {
+  position: relative;
+  z-index: 5;
   display: flex;
   flex-direction: column;
   color: #FF6060;
@@ -33,5 +40,11 @@
   padding: 0px 10px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  margin-top: -2px;
+  margin-top: -5px;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 1s ease-in-out;
+}
+.topBar-container.open .topBar-content {
+  max-height: 1000px;
 }/*# sourceMappingURL=topbar.css.map */

@@ -45,4 +45,16 @@
 .profil img {
   border-radius: 50%;
   margin-left: 10px;
+}
+
+.topbarContainer {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.topbarContainer .topbar-log {
+  margin: 20px;
+  flex: 1;
+}
+.topbarContainer .topbar-log:not(:last-child) {
+  margin-right: 10px;
 }/*# sourceMappingURL=host.css.map */

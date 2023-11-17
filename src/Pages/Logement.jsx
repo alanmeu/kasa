@@ -49,11 +49,15 @@ const Logement = () => {
 </div>
 </div>
     </div>
-    <div className="topbar-log">
+    <div className="topbarContainer">
+      <div className="topbar-log" >
       <TopBar title="Description" content={logement.description}/>
-      <TopBar title="Equipements" content={logement.equipments.map((item, index) => (
+      </div>
+      <div className="topbar-log">
+      <TopBar  title="Equipements" content={logement.equipments.map((item, index) => (
       <li key={index}>{item}</li>
       ))} />
+      </div>
    </div>
     </MainLayout>
   );

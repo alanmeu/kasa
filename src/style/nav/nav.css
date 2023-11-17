@@ -1,4 +1,5 @@
 .nav {
+  display: flex;
   gap: 10px;
   font-size: 24px;
   font-weight: 500;
@@ -6,10 +7,23 @@
 }
 .nav .nav-home {
   text-decoration: none;
-  color: red;
+  color: #FF6060;
   margin-right: 10px;
+}
+.nav .nav-home:hover {
+  border-bottom: 1px solid #FF6060;
 }
 .nav .nav-about {
   text-decoration: none;
-  color: red;
+  color: #FF6060;
+}
+.nav .nav-about:hover {
+  border-bottom: 1px solid #FF6060;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav {
+    font-size: 12px;
+    display: flex;
+  }
 }/*# sourceMappingURL=nav.css.map */
