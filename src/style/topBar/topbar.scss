@@ -6,7 +6,12 @@
   align-items: center;
   margin-top: 10px;
   padding: 20px 0px;
-  transition: height 0.3s ease; // Ajout de la transition pour l'effet d'ouverture
+  transition: height 0.3s ease;
+  
+  @media (max-width: 425px) {
+    padding: 0px 10px;
+    gap: 20px;
+  }
 
   .topBar-title {
     z-index: 10;
@@ -29,6 +34,11 @@
       font-family: "Montserrat";
       margin: 0;
     }
+    @media (max-width: 425px) {
+      width: Fixed (335px);
+      height: Fixed (30px);
+      border-radius: 5px}
+
   }
 
   .topBar-content {
@@ -46,6 +56,9 @@
     overflow: hidden; 
     max-height: 0;
     transition: max-height 1s ease-in-out;
+    @media (max-width: 425px) {
+      margin-top: -25px;
+    }
   }
 
   &.open {

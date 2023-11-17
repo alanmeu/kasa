@@ -5,10 +5,11 @@ import Header from '../Component/Header';
 const MainLayout =({children}) =>{
     return(
         <>
+        <Header/>
         <main className='main-container'>
 
-       <Header/>
-        <div >{children}</div>
+       
+        {children}
          </main>
         <Footer/>
         </>

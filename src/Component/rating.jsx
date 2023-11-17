@@ -1,6 +1,7 @@
 import React from 'react';
 import starfull from "/Users/alan/Desktop/kasa/kasa/src/Assets/Images/star-active.png"
 import starempty from "/Users/alan/Desktop/kasa/kasa/src/Assets/Images/star-inactive.png"
+import "/Users/alan/Desktop/kasa/kasa/src/style/logement/host.css"
 
 
 const Note = ({ rating }) => {
@@ -10,7 +11,7 @@ const Note = ({ rating }) => {
     const roundedRating = Math.round(rating);
 
     return Array.from({ length: 5 }, (_, index) => (
-      <img
+      <img className='star'
         key={index}
         src={index  < roundedRating ? starfull : starempty}
         alt={`Star ${index + 1}`}

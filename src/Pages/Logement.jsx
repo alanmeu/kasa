@@ -40,7 +40,7 @@ const Logement = () => {
 
   <div className="host">
   <div className="profil">
-    <img src={logement.host.picture} alt={logement.host.name} />
+    <img src={logement.host.picture} alt={logement.host.name} className="image-profil"/>
       <p>{logement.host.name}</p>
    </div>   
   <div className="host-info">

@@ -8,6 +8,12 @@
   padding: 20px 0px;
   transition: height 0.3s ease;
 }
+@media (max-width: 425px) {
+  .topBar-container {
+    padding: 0px 10px;
+    gap: 20px;
+  }
+}
 .topBar-container .topBar-title {
   z-index: 10;
   position: relative;
@@ -29,6 +35,13 @@
   font-family: "Montserrat";
   margin: 0;
 }
+@media (max-width: 425px) {
+  .topBar-container .topBar-title {
+    width: Fixed 335px;
+    height: Fixed 30px;
+    border-radius: 5px;
+  }
+}
 .topBar-container .topBar-content {
   position: relative;
   z-index: 5;
@@ -44,6 +57,11 @@
   overflow: hidden;
   max-height: 0;
   transition: max-height 1s ease-in-out;
+}
+@media (max-width: 425px) {
+  .topBar-container .topBar-content {
+    margin-top: -25px;
+  }
 }
 .topBar-container.open .topBar-content {
   max-height: 1000px;

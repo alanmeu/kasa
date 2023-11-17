@@ -57,4 +57,29 @@
 }
 .topbarContainer .topbar-log:not(:last-child) {
   margin-right: 10px;
+}
+
+@media (max-width: 375px) {
+  .topbarContainer {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .host {
+    display: flex;
+    order: 1;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .star {
+    width: 18px;
+    height: 18px;
+  }
+  .image-profil {
+    width: 32px;
+    height: 32px;
+  }
+  .container {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=host.css.map */
