@@ -11,6 +11,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+@media (max-width: 375px) {
+  .carousel .slider {
+    height: 335px;
+  }
+}
 .carousel .slide__image {
   height: 100%;
   width: 100%;
