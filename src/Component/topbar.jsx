@@ -1,6 +1,6 @@
 import React,{useState} from "react";
-import up from "/Users/alan/Desktop/kasa/kasa/src/Assets/Images/arrow_up.png"
-import down from "/Users/alan/Desktop/kasa/kasa/src/Assets/Images/arrow_down.png"
+import up from "/Users/alan/Desktop/kasa/src/Assets/Images/arrow_up.png"
+import down from "/Users/alan/Desktop/kasa/src/Assets/Images/arrow_down.png"
 
 
 const TopBar = ({title,content}) => {

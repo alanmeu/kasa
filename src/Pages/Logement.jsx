@@ -1,12 +1,12 @@
 
 
 import { useParams } from "react-router-dom";
-import logements from "/Users/alan/Desktop/kasa/kasa/src/logements.json";
+import logements from "/Users/alan/Desktop/kasa/src/logements.json";
 import MainLayout from "../Layout/MainLayout";
 import Carrousel from "../Component/carousel";
 import TopBar from "../Component/topbar";
 import Note from "../Component/rating";
-import "/Users/alan/Desktop/kasa/kasa/src/style/logement/host.css"
+import "/Users/alan/Desktop/kasa/src/style/logement/host.css"
 
 
 

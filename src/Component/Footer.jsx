@@ -1,6 +1,6 @@
 import React from "react";
-import LogoDark from "/Users/alan/Desktop/kasa/kasa/src/Assets/Images/darklogo.svg"
-import "/Users/alan/Desktop/kasa/kasa/src/style/footer/footer.css"
+import LogoDark from "/Users/alan/Desktop/kasa/src/Assets/Images/darklogo.svg"
+import "/Users/alan/Desktop/kasa/src/style/footer/footer.css"
 
 
 const Footer = () => {

@@ -1,6 +1,6 @@
 import React from "react"
 import Erreur from "../Component/erreur";
-import "/Users/alan/Desktop/kasa/kasa/src/style/erreur/erreur.css"
+import "/Users/alan/Desktop/kasa/src/style/erreur/erreur.css"
 
 
 const Error = () => {

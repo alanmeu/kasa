@@ -1,8 +1,8 @@
 
 import React from "react"
 import { Link } from "react-router-dom"
-import logements from "/Users/alan/Desktop/kasa/kasa/src/logements.json"
-import Card from "/Users/alan/Desktop/kasa/kasa/src/Component/Card"
+import logements from "/Users/alan/Desktop/kasa/src/logements.json"
+import Card from "/Users/alan/Desktop/kasa/src/Component/Card"
 
 const Gallery = () => {
   return (

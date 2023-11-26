@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import left from "/Users/alan/Desktop/kasa/kasa/src/Assets/Images/arrow_left.png";
-import right from "/Users/alan/Desktop/kasa/kasa/src/Assets/Images/arrow_right.png";
-import "/Users/alan/Desktop/kasa/kasa/src/style/carousel/caroussel.css"
+import left from "/Users/alan/Desktop/kasa/src/Assets/Images/arrow_left.png";
+import right from "/Users/alan/Desktop/kasa/src/Assets/Images/arrow_right.png";
+import "/Users/alan/Desktop/kasa/src/style/carousel/caroussel.css"
 
 function Carrousel({ slides }) {
   try {

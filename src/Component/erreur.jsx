@@ -1,6 +1,8 @@
 import { NavLink } from "react-router-dom";
 import MainLayout from "../Layout/MainLayout";
-import error from "/Users/alan/Desktop/kasa/kasa/src/Assets/Images/404 (1).svg"
+import error from "/Users/alan/Desktop/kasa/src/Assets/Images/404 (1).svg"
+import small from "/Users/alan/Desktop/kasa/src/Assets/Images/404mobile.svg"
+import "/Users/alan/Desktop/kasa/src/style/erreur/erreur.css"
 
 export default function Erreur() {
   
@@ -8,7 +10,10 @@ export default function Erreur() {
     <>
      <MainLayout>
       <div className="error-404">
-        <img src={error} className="erreur-number" alt="error"/>
+      <picture>
+            <source media="(max-width: 375px)" srcSet={small} />
+            <img src={error} className="erreur-number" alt="error" />
+          </picture>
         <p className="erreurText">
           Oups! La page que vous demandez n'existe pas.
         </p>

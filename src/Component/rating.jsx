@@ -1,7 +1,7 @@
 import React from 'react';
-import starfull from "/Users/alan/Desktop/kasa/kasa/src/Assets/Images/star-active.png"
-import starempty from "/Users/alan/Desktop/kasa/kasa/src/Assets/Images/star-inactive.png"
-import "/Users/alan/Desktop/kasa/kasa/src/style/logement/host.css"
+import starfull from "/Users/alan/Desktop/kasa/src/Assets/Images/star-active.png"
+import starempty from "/Users/alan/Desktop/kasa/src/Assets/Images/star-inactive.png"
+import "/Users/alan/Desktop/kasa/src/style/logement/host.css"
 
 
 const Note = ({ rating }) => {
