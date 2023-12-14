@@ -45,7 +45,7 @@ function Carrousel({ slides }) {
     );
   } catch (error) {
     console.error("Erreur dans le composant Carrousel:", error);
-    return <div>Erreur dans le composant Carrousel. Veuillez consulter la console pour plus d'informations.</div>;
+    return <div>Erreur dans le composant Carrousel.</div>;
   }
 }
 
