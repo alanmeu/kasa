@@ -1,6 +1,6 @@
 
 
-import { useParams } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import logements from "/Users/alan/Desktop/kasa/src/logements.json";
 import MainLayout from "../Layout/MainLayout";
 import Carrousel from "../Component/carousel";
@@ -20,7 +20,7 @@ const Logement = () => {
   
 
   if (!logement) {
-    return <div>Logement non trouvé</div>;
+    return <Navigate to="/error" />;
   }
 
   return (
